@@ -1,8 +1,12 @@
 <template>
-  <div>
-    <RouterView />
+  <div class="text-center text-2xl">
+  <nav>
+    <RouterLink to="/">HOME</RouterLink> |
+    <RouterLink to="/about">ABOUT</RouterLink>
+  </nav>
 
-  </div>
+   <RouterView />
+    </div>
 </template>
 
 <script setup>
@@ -11,6 +15,6 @@ import { RouterView } from 'vue-router';
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
